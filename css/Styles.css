@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 5px;
+  font-family: "openSans";
+  color: #555b6e;
+}
+
+@font-face {
+  font-family: "openSansBold";
+  src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url();
+}
+body {
+  background-color: #faf9f9;
+}
+
+header {
+  background-color: #ffffff;
+  background-image: url(../img/159709415_101277888712765_6440771873181743053_n.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+  padding-left: 45%;
+  height: 50x;
+}
+
+.img__encabezado {
+  float: right;
+  left: 60%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: chocolate;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+nav ul li a {
+  display: flex;
+  color: rgb(156, 108, 17);
+  flex-direction: row-reverse;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+li a:visited {
+  color: rgb(37, 115, 125);
+}
+li a:hover {
+  background-color: #89b0ae;
+}
+
+.img__barra {
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
+h1 {
+  color: #576070;
+  font-family: openSansBold;
+  text-align: right;
+  padding: 10px 10px;
+}
+
+footer {
+  background-color: #89b0ae;
+  display: flex;
+  justify-content: space-between;
+}
+footer h3,
+footer p {
+  display: flex;
+  justify-content: space-between;
+  color: #faf9f9;
+  font-style: italic;
+}
+
+caption {
+  padding: 20px;
+  font-style: italic;
+  font-size: small;
+  caption-side: top;
+  text-align: center;
+}
+
+table {
+  border: solid;
+  width: 40%;
+  margin: 2px;
+  border-collapse: collapse;
+}
+
+th,
+tfoot,
+td {
+  border: solid;
+  text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.main__contacto{
+    display: flex;
+}
+
+
+
+.section__contacto{
+    background-color: #ffffff;
+    width: 450px;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0,  .8);
+    margin: 1% 35%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form__coontacto{
+    padding: 8rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.form__contacto label, .form__contacto input, .form__contacto textarea, .form__contacto select {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
