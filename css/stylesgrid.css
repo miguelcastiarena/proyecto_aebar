@@ -64,7 +64,15 @@ ul {
   max-height: 200px;
   max-width: 350px;
   height: auto;
+  transform: scale(1.7,1.2) rotate(20deg) translate(20px, 40px) skew(10deg,-10deg);
+  transition: all 2s;
 }
+
+.img__aebar:hover{
+  height: 300px ; width: 150px;
+
+}
+
 .img__encabezado {
   width: 90%;
   height: auto;
@@ -114,11 +122,18 @@ nav ul {
   padding: 10px 5px;
   text-decoration: none;
 }
+
+li a{
+  transition: all 1.5s;
+}
+
 li a:visited {
   color: rgb(37, 115, 125);
 }
 li a:hover {
   background-color: #89b0ae;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .main__main {
@@ -318,7 +333,7 @@ td {
 }
 
 footer {
-  background-color: #89b0ae;
+  background-image: linear-gradient(to right, #89b0ae, white);
   display: flex;
   justify-content: space-between;
 }
