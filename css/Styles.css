@@ -126,7 +126,7 @@ main{
     background-color: #ffffff;
     width: 450px;
     box-shadow: 7px 13px 37px rgba(0, 0, 0,  .8);
-    margin: 1% 35%;
+    
     align-items: center;
     flex-direction: row;
 }
