@@ -11,61 +11,90 @@
   <link rel="stylesheet" href="./css/stylesgrid.css" />
 </head>
 
-<body class="container">
-  <header class="encabezado row">
-    <div class="div__head1 col-md 3">
-      <img class="img__aebar" src="./img/159709415_101277888712765_6440771873181743053_n.png" alt="" />
+<body>
+  <header class="container">
 
-
-    </div>
 
     <div class="div__head2">
-      <h1 class="headTitulo">Asociacion AEBAR</h1>
+      <h1 class="headTitulo display-4">Asociación AEBAR</h1>
       <img class="img__encabezado" src="../img/Escaladabar2.jpeg" alt="" />
 
     </div>
 
-    <div class="div__head3">
-      <nav class="headNav">
-        <ul class="nav__seccion">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="./Pages/comisiones.html">Comisiones</a></li>
-          <li><a href="./Pages/guia.html">Guía Online</a></li>
-          <li><a href="./Pages/Muros.html">Muros de Escalada</a></li>
-          <li><a href="./Pages/contacto.html">Contacto</a></li>
-        </ul>
+    <div class="div__head3 container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"> <img src="./img/159709415_101277888712765_6440771873181743053_n.png" alt=""
+              width="200px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/comisiones.html">Comisiones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/guia.html">Guia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/muros.html">Muros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Usuario" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Contraseña" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Ingresar</button>
+            <button class="btn btn-outline-secondary" type="submit">Registrarse</button>
+          </form>
+        </div>
       </nav>
-      <form class="formNav" action="">
-        <label for="NombreUsuario">Usuario</label>
-        <input type="text" name="nombreUsuario" id="" size="auto" placeholder="Nombre" />
-        <label for="Contraseña">Contraseña</label>
-        <input type="password" name="Contraseña" id="" size="auto" placeholder="Contraseña" />
-        <input type="submit" value="Ingresar" />
-        <input type="button" value="Registrarse" />
-      </form>
+
     </div>
   </header>
 
-  <main class="main__main">
-    <div class="div__1">
-      <img class="img__barra" src="../img/download.jpeg" alt="foto desde campanario" />
-    </div>
-    <div class="div__2">
-      <h2 class="titulo">¿Cómo surge la asociación?</h2>
-      <p class="textoMain">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus aut doloremque impedit reiciendis
-        corrupti, atque tempora provident maxime explicabo vel dolorum at illo, ea id, perferendis cupiditate fuga quod
-        esse! Provident, dolores! Vero facilis accusantium sint! Nisi fuga, quo consequuntur aperiam earum minus ex
-        provident blanditiis perspiciatis mollitia nam?
-      </p>
+  <main class="container-fluid">
+    <div class="row">
+      <img class="img__barra col-md-12 g-5"  src="../img/download.jpeg" alt="foto desde campanario" />
     </div>
 
-    <div class="div__3">
-      <img class="img__ventana" src="./img/Ventana.jpeg" alt="foto desde campanario" height="auto" width="60%" />
-    </div>
+    <section class="row">
+      <div class="col-md-6 g-5">
+        <h2 class="titulo">¿Cómo surge la asociación?</h2>
+        <p class="textoMain">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          voluptates suscipit ratione in, distinctio unde, vero numquam
+          temporibus excepturi itaque sed ducimus. Vero, iure sit voluptas in
+          quaerat eligendi magnam. La Asociación Escalada Bariloche tiene por
+          objeto promover, propiciar y difundir la práctica de la escalada en
+          todas sus modalidades y montañismo en general en la region.
+        </p>
+      </div>
 
-    <div class="div__4">
-      <p class="texto">
+      <div class="col-md-6 g-5">
+        <img class="img__ventana" src="./img/Ventana.jpeg" alt="foto desde campanario" height="auto" width="60%" />
+      </div>
+
+
+    </section>
+
+
+
+
+    <div class="row ">
+      <p class="col-md-12 g-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
         consequuntur minus assumenda incidunt ab nobis ex sint neque, ad
         impedit aliquid a ratione recusandae voluptatum animi! Nobis illo
@@ -95,7 +124,7 @@
   </main>
 
   <footer>
-    <h3 class="titulo">Seguinos en redes sociales</h3>
+    <h3 class="titulo h3">Seguinos en redes sociales</h3>
     <div class="logos__footer">
       <a class="logos__footer" href="mailto:peluyocas@hotmail.com"><img src="../Iconos/icons8-mail-48.png" alt="" /></a>
       <a class="logos__footer" href="https://www.facebook.com/Asociaci%C3%B3n-Escalada-Bariloche-100554405451780"><img
