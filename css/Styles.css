@@ -19,6 +19,14 @@
   font-family: "openSans";
   src: url();
 }
+
+.padding5px{
+  padding: 5px;
+}
+
+.margin5px{
+  margin: 10px;
+}
 body {
   background-color: #faf9f9;
 }
@@ -119,6 +127,7 @@ main{
 .main__contacto{
     display: flex;
 }
+
 
 
 
