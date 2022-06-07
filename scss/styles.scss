@@ -1,0 +1,553 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "openSans";
+    color: #555b6e;
+  }
+  
+  @font-face {
+    font-family: "openSansBold";
+    src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "openSans";
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+  }
+  
+  body {
+    background-color: #faf9f9;
+  }
+  
+  a,
+  li,
+  ul {
+    font-style: none;
+    text-decoration: none;
+  }
+  
+  .encabezado {
+    display: gri;
+    grid-template-columns: auto;
+    grid-template-rows: 250px 1fr 400px;
+    row-gap: 2px;
+    column-gap: 2px;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    grid-template-areas:
+      "div__head1"
+      "div__head2"
+      "div__head3";
+  }
+  
+  .div__head1 {
+    grid-area: div__head1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .div__head2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: div__head2;
+  }
+  .div__head3 {
+    display: flex;
+    flex-direction: column;
+    grid-area: div__head3;
+  }
+  
+  .img__aebar {
+    max-height: 200px;
+    max-width: 350px;
+    height: auto;
+    /* transform: scale(1.7,1.2) rotate(20deg) translate(20px, 40px) skew(10deg,-10deg);
+    transition: all 2s; */
+  }
+  
+  .img__aebar:hover {
+    height: 300px;
+    width: 150px;
+  }
+  
+  .img__encabezado {
+    width: 90%;
+    height: auto;
+    padding: 2%;
+  }
+  
+  .formNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-top: #555b6e;
+  }
+  
+  .formNav input,
+  .formNav label {
+    padding: 3px;
+    margin: 3px;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: large;
+    font-family: "openSansBold";
+    padding: 2%;
+  }
+  
+  .lista, .lista li a{
+      list-style-type: none;
+      text-decoration: none;
+  }
+
+
+  nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    color: chocolate;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__seccion a {
+    display: flex;
+    color: rgb(156, 108, 17);
+    flex-direction: row;
+    padding: 10px 5px;
+    text-decoration: none;
+  }
+  
+  li a {
+    transition: all 1.5s;
+  }
+  
+  li a:visited {
+    color: rgb(37, 115, 125);
+  }
+  li a:hover {
+    background-color: #d2d8d8;
+    padding-left: 12px;
+    padding-right: 12px;
+    transform: scale(1.1);
+    transition: all 1s;
+  }
+  
+  main {
+    background-color: #edeaea;
+  }
+  
+  .gris{
+    text-decoration-color: #555b6e;
+  }
+  
+  /* SECCION INDEX */
+  
+  .main__main {
+    padding: 3%;
+    display: grid;
+    background-color: #edeaea;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    grid-template-areas: " div__1" " div__2" " div__3" " div__4";
+  }
+  
+  .div__1 {
+    background-color: #edeaea;
+    grid-area: div__1;
+  }
+  
+  .div__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #edeaea;
+    grid-area: div__2;
+  }
+  
+  .div__3 {
+    background-color: #edeaea;
+  
+    grid-area: div__3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div__4 {
+    grid-area: div__4;
+    background-color: #edeaea;
+  }
+  
+  /* SECCION COMISIONES */
+  
+  .mainComisiones {
+    padding: 3%;
+    background-color: #edeaea;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "divComisiones1"
+      "divComisiones2"
+      "divComisiones3"
+      "divComisiones4"
+      "divComisiones5";
+  }
+  
+  .divComisiones1 {
+    background-color: #edeaea;
+    grid-area: divComisiones1;
+  }
+  .divComisiones2 {
+    background-color: #edeaea;
+    grid-area: divComisiones2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .divComisiones3 {
+    background-color: #edeaea;
+    grid-area: divComisiones3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .divComisiones4 {
+    background-color: #edeaea;
+    grid-area: divComisiones4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .divComisiones5 {
+    background-color: #edeaea;
+    grid-area: divComisiones5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  /* SECCION GUIA */
+  
+  .mainGuia {
+    padding: 3%;
+    background-color: #edeaea;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "divGuia1"
+      "divGuia2"
+      "divGuia3";
+  }
+  
+  .divGuia1 {
+    grid-area: divGuia1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divGuia2 {
+    grid-area: divGuia2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divGuia2 ul {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .divGuia3 {
+    grid-area: divGuia3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divGuia4 {
+    grid-area: divGuia4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divGuia5 {
+    grid-area: divGuia5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divGuia6 {
+    grid-area: divGuia6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divGuia7 {
+    grid-area: divGuia7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  caption {
+    padding: 20px;
+    font-style: italic;
+    font-size: small;
+    caption-side: top;
+    text-align: center;
+  }
+  
+  table {
+    border: solid;
+    width: 40%;
+    margin: 2px;
+    border-collapse: collapse;
+  }
+  
+  th,
+  tfoot,
+  td {
+    border: solid;
+    text-align: center;
+  }
+  
+  /* SECCION MUROS */
+  
+  .mainMuros {
+    padding: 3%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  footer {
+    background-image: linear-gradient(to right, #89b0ae, white);
+    display: flex;
+    justify-content: space-between;
+  }
+  footer h3,
+  footer p {
+    display: flex;
+    justify-content: space-between;
+    color: #576070;
+    padding: 1rem;
+  }
+  
+  /* SECCION CONTACTO */
+  
+  .main__contacto {
+    padding: 3%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  .section__contacto {
+    background-color: #ffffff;
+    width: 40%;
+  
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
+    margin: 1% 35%;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .form__coontacto {
+    padding: 8rem;
+    overflow: hidden;
+    color: gray;
+  }
+  
+  .form__contacto label,
+  .form__contacto input,
+  .form__contacto textarea,
+  .form__contacto select {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  .img__barra {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .img_ventana {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .encabezado {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 100px;
+      row-gap: 2px;
+      column-gap: 2px;
+      background-color: #ffffff;
+      padding-bottom: 5px;
+      grid-template-areas:
+        "div__head1 div__head2 div__head2"
+        "div__head3 div__head3 div__head3";
+    }
+  
+    nav ul {
+      list-style-type: none;
+      color: chocolate;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .formNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 2px;
+    }
+    .img__encabezado {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      width: auto;
+    }
+  
+    .div__head2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      grid-area: div__head2;
+    }
+  
+    .div__head1 {
+      margin: 2opx;
+      grid-area: div__head1;
+      margin: 5px;
+    }
+  
+    .div__head3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      grid-area: div__head3;
+      margin: 5px;
+    }
+  
+    .main__main {
+      display: grid;
+      background-color: #edeaea;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 150px 200px 200px auto;
+      grid-template-areas:
+        "div__1 div__1 div__1"
+        "div__2 div__3  div__3"
+        "div__2 div__3 div__3"
+        "div__4 div__4 div__4";
+    }
+  
+    .div__1 {
+      grid-area: div__1;
+      background-color: #edeaea;
+      margin: 2px;
+      margin: 10px;
+    }
+  
+    .div__2 {
+      grid-area: div__2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2%;
+      background-color: #edeaea;
+    }
+  
+    .div__3 {
+      grid-area: div__3;
+    }
+    .div__4 {
+      grid-area: div__4;
+      background-color: #edeaea;
+      padding: 5%;
+      margin: 3px;
+    }
+  
+    .img__barra {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  
+    .img__ventana {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .textoMain {
+      text-align: justify;
+    }
+    .mainComisiones {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas:
+        "divComisiones1 divComisiones1"
+        "divComisiones2 divComisiones3"
+        "divComisiones4 divComisiones5";
+    }
+    .divComisiones1 {
+      margin: 2px;
+      margin: 10px;
+      padding: 2%;
+    }
+  
+    .mainGuia {
+      padding: 3%;
+      background-color: #edeaea;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr;
+      grid-template-areas:
+        "divGuia1 divGuia1"
+        "divGuia2 divGuia3"
+        "divGuia2 divGuia3";
+    }
+  }
+  
