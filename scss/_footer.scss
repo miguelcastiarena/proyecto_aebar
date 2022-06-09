@@ -1,0 +1,13 @@
+footer {
+    background-image: linear-gradient(to right, $color-principal, white);
+    display: flex;
+    justify-content: space-between;
+    h3, p {
+        display: flex;
+        justify-content: space-between;
+        color: $color-texto;
+        padding: 1rem;
+
+      }
+  }
+  

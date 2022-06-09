@@ -1,3 +1,7 @@
+@import "variables";
+@import "footer";
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,12 +23,28 @@
     background-color: #faf9f9;
   }
   
-  a,
-  li,
-  ul {
-    font-style: none;
-    text-decoration: none;
+
+  ul{
+      list-style-type: none;
+      li{
+          a{
+              text-decoration: none;
+              transition: all 1.5s;
+    &:visited {
+    color: rgb(37, 115, 125);
+}
+    &:hover {
+    background-color: $color-principal;
+    padding-left: 12px;
+    padding-right: 12px;
+    transform: scale(1.1);
+    transition: all 1s;
+  
   }
+          }
+      }
+  }
+
   
   .encabezado {
     display: gri;
@@ -32,7 +52,7 @@
     grid-template-rows: 250px 1fr 400px;
     row-gap: 2px;
     column-gap: 2px;
-    background-color: #ffffff;
+    background-color: white;
     padding-bottom: 30px;
     grid-template-areas:
       "div__head1"
@@ -85,7 +105,7 @@
     justify-content: center;
     align-items: center;
     margin: 5px;
-    border-top: #555b6e;
+    border-top: $color-texto;
   }
   
   .formNav input,
@@ -94,62 +114,34 @@
     margin: 3px;
   }
   
-  header h1 {
+  header {
+    text-align: center;
+      h1 {
     text-align: center;
     font-size: large;
     font-family: "openSansBold";
     padding: 2%;
   }
+}
   
-  .lista, .lista li a{
+  .lista{
       list-style-type: none;
       text-decoration: none;
+      color: $color-texto;
+      .lista li a{
+        list-style-type: none;
+        text-decoration: none;
+        color: $color-texto;
+      }
   }
 
-
-  nav {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    color: chocolate;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav__seccion a {
-    display: flex;
-    color: rgb(156, 108, 17);
-    flex-direction: row;
-    padding: 10px 5px;
-    text-decoration: none;
-  }
-  
-  li a {
-    transition: all 1.5s;
-  }
-  
-  li a:visited {
-    color: rgb(37, 115, 125);
-  }
-  li a:hover {
-    background-color: #d2d8d8;
-    padding-left: 12px;
-    padding-right: 12px;
-    transform: scale(1.1);
-    transition: all 1s;
-  }
   
   main {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
   }
   
   .gris{
-    text-decoration-color: #555b6e;
+    text-decoration-color: $color-texto;
   }
   
   /* SECCION INDEX */
@@ -157,14 +149,14 @@
   .main__main {
     padding: 3%;
     display: grid;
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto auto;
     grid-template-areas: " div__1" " div__2" " div__3" " div__4";
   }
   
   .div__1 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: div__1;
   }
   
@@ -173,12 +165,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: div__2;
   }
   
   .div__3 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
   
     grid-area: div__3;
     display: flex;
@@ -187,14 +179,14 @@
   }
   .div__4 {
     grid-area: div__4;
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
   }
   
   /* SECCION COMISIONES */
   
   .mainComisiones {
     padding: 3%;
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -207,11 +199,11 @@
   }
   
   .divComisiones1 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: divComisiones1;
   }
   .divComisiones2 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: divComisiones2;
     display: flex;
     flex-direction: column;
@@ -219,7 +211,7 @@
     justify-content: center;
   }
   .divComisiones3 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: divComisiones3;
     display: flex;
     flex-direction: column;
@@ -227,7 +219,7 @@
     justify-content: center;
   }
   .divComisiones4 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: divComisiones4;
     display: flex;
     flex-direction: column;
@@ -235,7 +227,7 @@
     justify-content: center;
   }
   .divComisiones5 {
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     grid-area: divComisiones5;
     display: flex;
     flex-direction: column;
@@ -254,7 +246,7 @@
   
   .mainGuia {
     padding: 3%;
-    background-color: #edeaea;
+    background-color: $color-fondo-secundario;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -349,18 +341,7 @@
     grid-template-rows: auto auto;
   }
   
-  footer {
-    background-image: linear-gradient(to right, #89b0ae, white);
-    display: flex;
-    justify-content: space-between;
-  }
-  footer h3,
-  footer p {
-    display: flex;
-    justify-content: space-between;
-    color: #576070;
-    padding: 1rem;
-  }
+  
   
   /* SECCION CONTACTO */
   
@@ -383,7 +364,7 @@
   .form__coontacto {
     padding: 8rem;
     overflow: hidden;
-    color: gray;
+    color: $color-texto;
   }
   
   .form__contacto label,
@@ -410,6 +391,9 @@
     object-fit: cover;
   }
   
+
+ /* SECCION MEDIAQUERIES */
+
   @media screen and (min-width: 768px) {
     .encabezado {
       display: grid;
@@ -471,7 +455,7 @@
   
     .main__main {
       display: grid;
-      background-color: #edeaea;
+      background-color: $color-fondo-secundario;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 150px 200px 200px auto;
       grid-template-areas:
@@ -483,7 +467,7 @@
   
     .div__1 {
       grid-area: div__1;
-      background-color: #edeaea;
+      background-color: $color-fondo-secundario;
       margin: 2px;
       margin: 10px;
     }
@@ -495,7 +479,7 @@
       justify-content: center;
       align-items: center;
       padding: 2%;
-      background-color: #edeaea;
+      background-color: $color-fondo-secundario;
     }
   
     .div__3 {
@@ -503,7 +487,7 @@
     }
     .div__4 {
       grid-area: div__4;
-      background-color: #edeaea;
+      background-color: $color-fondo-secundario;
       padding: 5%;
       margin: 3px;
     }
@@ -540,7 +524,7 @@
   
     .mainGuia {
       padding: 3%;
-      background-color: #edeaea;
+      background-color: $color-fondo-secundario;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto 1fr 1fr;
