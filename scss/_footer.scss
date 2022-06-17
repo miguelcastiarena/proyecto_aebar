@@ -10,4 +10,27 @@ footer {
 
       }
   }
+
+  .logos__footer{
+    text-decoration: none;
+    color: $color-texto;
+  }
+
+  .hover-footer{
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
+    list-style-type: none;
+
+  }
+  
+  @each $icono, $color in $colores-footer{
+    .btn-#{$icono}:hover{
+        @extend .hover-footer;
+        background-color: $color;
+        
+    
+    }
+    
+}
   

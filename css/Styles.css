@@ -8,6 +8,34 @@ footer {
     color: #555b6e;
     padding: 1rem; }
 
+.logos__footer {
+  text-decoration: none;
+  color: #555b6e; }
+
+.hover-footer, .btn-email:hover, .btn-twitter:hover, .btn-facebook:hover, .btn-instagram:hover, .btn-youtube:hover, .btn-whatsapp:hover {
+  color: #fff;
+  font-style: none;
+  text-decoration: none;
+  list-style-type: none; }
+
+.btn-email:hover {
+  background-color: #00acee; }
+
+.btn-twitter:hover {
+  background-color: #00acee; }
+
+.btn-facebook:hover {
+  background-color: #3b5998; }
+
+.btn-instagram:hover {
+  background-color: #dd2a7b; }
+
+.btn-youtube:hover {
+  background-color: #c4302b; }
+
+.btn-whatsapp:hover {
+  background-color: #00bb2d; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -40,7 +68,7 @@ ul {
       transition: all 1s; }
 
 .encabezado {
-  display: gri;
+  display: grid;
   grid-template-columns: auto;
   grid-template-rows: 250px 1fr 400px;
   row-gap: 2px;
@@ -152,6 +180,18 @@ main {
   background-color: #edeaea; }
 
 /* SECCION COMISIONES */
+.contraste1:hover {
+  color: #edeaea;
+  background-color: #555b6e; }
+
+.contraste2:hover {
+  color: #faf9f9;
+  background-color: #8dc5c3; }
+
+.contraste3:hover {
+  color: #8dc5c3;
+  background-color: #555b6e; }
+
 .mainComisiones {
   padding: 3%;
   background-color: #edeaea;
@@ -282,6 +322,10 @@ td {
   padding: 3%;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto; }
+
+.muros-facebook:hover {
+  background-color: #3b5998;
+  color: #ffffff; }
 
 /* SECCION CONTACTO */
 .main__contacto {
