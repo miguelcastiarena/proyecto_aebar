@@ -2,12 +2,7 @@
 @import "footer";
 @import "mixins";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "openSans";
-    color: #555b6e;
-  }
+
   
   @font-face {
     font-family: "openSansBold";
@@ -19,11 +14,23 @@
     src: url(../fonts/open-sans/OpenSans-Regular.ttf);
   }
   
+    /* Estilos generales */
+
+
   body {
     background-color: #faf9f9;
   }
-  
 
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "openSans";
+    color: #555b6e;
+  }
+  
+      /* HEADER*/
+
+  
   ul{
       list-style-type: none;
       li{
@@ -46,39 +53,7 @@
   }
 
   
-  .encabezado {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 250px 1fr 400px;
-    row-gap: 2px;
-    column-gap: 2px;
-    background-color: white;
-    padding-bottom: 30px;
-    grid-template-areas:
-      "div__head1"
-      "div__head2"
-      "div__head3";
-  }
   
-  .div__head1 {
-    grid-area: div__head1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .div__head2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-area: div__head2;
-  }
-  .div__head3 {
-    display: flex;
-    flex-direction: column;
-    grid-area: div__head3;
-  }
   
   .img__aebar {
     max-height: 200px;
@@ -146,41 +121,7 @@
   
   /* SECCION INDEX */
   
-  .main__main {
-    padding: 3%;
-    display: grid;
-    background-color: $color-fondo-secundario;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto;
-    grid-template-areas: " div__1" " div__2" " div__3" " div__4";
-  }
   
-  .div__1 {
-    background-color: $color-fondo-secundario;
-    grid-area: div__1;
-  }
-  
-  .div__2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-fondo-secundario;
-    grid-area: div__2;
-  }
-  
-  .div__3 {
-    background-color: $color-fondo-secundario;
-  
-    grid-area: div__3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .div__4 {
-    grid-area: div__4;
-    background-color: $color-fondo-secundario;
-  }
   
   /* SECCION COMISIONES */
 
