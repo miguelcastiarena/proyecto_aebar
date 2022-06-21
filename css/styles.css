@@ -72,9 +72,7 @@ ul {
 .img__aebar {
   max-height: 200px;
   max-width: 350px;
-  height: auto;
-  /* transform: scale(1.7,1.2) rotate(20deg) translate(20px, 40px) skew(10deg,-10deg);
-    transition: all 2s; */ }
+  height: auto; }
 
 .img__aebar:hover {
   height: 300px;
@@ -134,50 +132,6 @@ main {
 .contraste3:hover {
   color: #8dc5c3;
   background-color: #555b6e; }
-
-.mainComisiones {
-  padding: 3%;
-  background-color: #edeaea;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "divComisiones1" "divComisiones2" "divComisiones3" "divComisiones4" "divComisiones5"; }
-
-.divComisiones1 {
-  background-color: #edeaea;
-  grid-area: divComisiones1; }
-
-.divComisiones2 {
-  background-color: #edeaea;
-  grid-area: divComisiones2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.divComisiones3 {
-  background-color: #edeaea;
-  grid-area: divComisiones3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.divComisiones4 {
-  background-color: #edeaea;
-  grid-area: divComisiones4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.divComisiones5 {
-  background-color: #edeaea;
-  grid-area: divComisiones5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
 
 .centrar {
   display: flex;

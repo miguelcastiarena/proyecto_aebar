@@ -59,8 +59,7 @@
     max-height: 200px;
     max-width: 350px;
     height: auto;
-    /* transform: scale(1.7,1.2) rotate(20deg) translate(20px, 40px) skew(10deg,-10deg);
-    transition: all 2s; */
+    
   }
   
   .img__aebar:hover {
@@ -135,56 +134,7 @@
     @include contraste($color-principal, $color-texto)
   }
   
-  .mainComisiones {
-    padding: 3%;
-    background-color: $color-fondo-secundario;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "divComisiones1"
-      "divComisiones2"
-      "divComisiones3"
-      "divComisiones4"
-      "divComisiones5";
-  }
   
-  .divComisiones1 {
-    background-color: $color-fondo-secundario;
-    grid-area: divComisiones1;
-  }
-  .divComisiones2 {
-    background-color: $color-fondo-secundario;
-    grid-area: divComisiones2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .divComisiones3 {
-    background-color: $color-fondo-secundario;
-    grid-area: divComisiones3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .divComisiones4 {
-    background-color: $color-fondo-secundario;
-    grid-area: divComisiones4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .divComisiones5 {
-    background-color: $color-fondo-secundario;
-    grid-area: divComisiones5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   
   .centrar{
     display: flex;
