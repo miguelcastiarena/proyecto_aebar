@@ -72,9 +72,15 @@
     <div class="row"><img class="img__barra col-md-12 g-5" src="../img/panoramicampanario2.jpg" alt="foto desde campanario" />
     </div>
 
-    <div class="row g-5">
-      <h1 class="col-md-12 g-5 centrar display-4 animate__animated animate__fadeIn">Contacto</h1>
-      <section class="section__contacto col-md-12 g-5 centrar">
+    <div class="row">
+      <div class="titulo_contacto col-md-4 g-5 centrar">
+        <h1 class="display-4 animate__animated animate__fadeIn">Contacto</h1>
+        <p class="texto">Comunicate con los referentes de cada comision via mail, dejandonos un comentario acá.</p>
+
+
+      </div>
+      
+      <section class="section__contacto col-md-4 g-5 centrar">
 
         <form class="form__contacto " action="" method="get">
           <label for="Nombre" class="etiqueta">Nombre</label>
@@ -87,12 +93,15 @@
             <option value="Legales">Legales</option>
             <option value="MedioAmbiente">Medio Ambiente</option>
           </select>
-          <label for="Socio" class="etiqueta">Soy socio</label>
-          <input type="radio" name="Socio" id="" />
-          <textarea name="Mensaje" id="Mensaje" cols="30" rows="10">
+          <label for="Afililiacion" class="etiqueta">Afiliación</label>
+          <select name="" id="" placeholder="">
+            <option value="Socio">Soy socio</option>
+            <option value="NoSocio">No estoy afiliado</option>
+          </select>
+          <textarea name="Mensaje" id="Mensaje" cols="30" rows="5">
 Escribí acá tus comentarios</textarea>
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar formulario" />
+          <input class="btn btn-email" type="submit" value="Enviar" />
+          <input class="btn btn-email" type="reset" value="Limpiar formulario" />
         </form>
       </section>
     </div>
@@ -105,14 +114,14 @@ Escribí acá tus comentarios</textarea>
       asociación real (y estará online en forma temporal solo como parte de una entrega), es una pagina estática con
       contenido de relleno inventado para simular una posible pagina real. </p>
     <div class="logos__footer footer_div3">
-      <a class="logos__footer btn-email" href="mailto:peluyocas@hotmail.com"><img src="../Iconos/icons8-mail-48.png"
+      <a class="logos__footer btn-email btn" href="mailto:peluyocas@hotmail.com"><img src="../Iconos/icons8-mail-48.png"
           alt="" /> E-mail</a>
-      <a class="logos__footer btn-facebook"
+      <a class="logos__footer btn-facebook btn"
         href="https://www.facebook.com/Asociaci%C3%B3n-Escalada-Bariloche-100554405451780"><img
           src="../Iconos/icons8-facebook-48.png" alt="" /> Facebook</a> <br>
-      <a class="logos__footer btn-instagram" href="https://www.instagram.com/aebar_patagonia/"><img
+      <a class="logos__footer btn-instagram btn" href="https://www.instagram.com/aebar_patagonia/"><img
           src="../Iconos/icons8-instagram-48.png" alt="" />Instagram</a> 
-      <a href="" class="logos__footer btn-twitter"><img src="./Iconos/icons8-twitter-48.png" alt=""> Twitter</a>
+      <a href="" class="logos__footer btn-twitter btn"><img src="../Iconos/icons8-twitter-48.png" alt=""> Twitter</a>
       <p>Proximamente EscaladaBar App</p>
     </div>
   </footer>

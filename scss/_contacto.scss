@@ -1,0 +1,39 @@
+/* SECCION CONTACTO */
+  
+
+  
+  .section__contacto {
+    background-color: #ffffff;
+    width: 50%;
+    // box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
+  }
+  
+  .titulo_contacto {
+      width: 40%;
+      margin-left: 5%;
+  }
+  .form__coontacto {
+    padding: 8rem;
+    overflow: hidden;
+    color: $color-texto;
+    
+  }
+  
+  .form__contacto label,
+  .form__contacto input,
+  .form__contacto textarea,
+  .form__contacto select {
+    display: inline-block;
+    width: 100%;
+    padding: 3px;
+    margin: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: $color-texto
+  }
+
+  .inline{
+      display: inline;
+      width: 50%;
+  }
+  

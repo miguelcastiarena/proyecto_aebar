@@ -1,19 +1,11 @@
 @import "variables";
 @import "footer";
 @import "mixins";
-@import "contacto"
+@import "contacto";
 
 
   
-  @font-face {
-    font-family: "openSansBold";
-    src: url(../fonts/open-sans/OpenSans-Bold.ttf);
-  }
   
-  @font-face {
-    font-family: "openSans";
-    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
-  }
   
     /* Estilos generales */
 
@@ -52,6 +44,18 @@
           }
       }
   }
+
+  @font-face {
+    font-family: "openSansBold";
+    src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "openSans";
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+  }
+
+  
 
   
   
@@ -119,11 +123,26 @@
     text-decoration-color: $color-texto;
   }
   
+
+  .img__barra {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .img_ventana {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
   /* SECCION INDEX */
   
   
   
   /* SECCION COMISIONES */
+
 
   .contraste1:hover{
     @include contraste($color-fondo-secundario, $color-texto)
@@ -249,53 +268,7 @@
   }
   
   
-  /* SECCION CONTACTO */
   
-  .main__contacto {
-    padding: 3%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-  
-  .section__contacto {
-    background-color: #ffffff;
-    width: 40%;
-  
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
-    margin: 1% 35%;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .form__coontacto {
-    padding: 8rem;
-    overflow: hidden;
-    color: $color-texto;
-  }
-  
-  .form__contacto label,
-  .form__contacto input,
-  .form__contacto textarea,
-  .form__contacto select {
-    display: inline-block;
-    width: 90%;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  
-  .img__barra {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .img_ventana {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-  }
   
 
 
