@@ -36,6 +36,28 @@ footer {
 .btn-whatsapp:hover {
   background-color: #00bb2d; }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "div1" "div2" "div3"; }
+
+.footer_div1 {
+  grid-area: div1; }
+
+.footer_div2 {
+  grid-area: div2; }
+
+.footer_div3 {
+  grid-area: div3; }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: "div1 div2 div3"; } }
+
 @font-face {
   font-family: "openSansBold";
   src: url(../fonts/open-sans/OpenSans-Bold.ttf); }

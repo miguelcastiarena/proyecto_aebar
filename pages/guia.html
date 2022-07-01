@@ -72,7 +72,7 @@
     </header>
     <main class="container-fluid">
         <div class="row">
-            <img class="img__barra col-md-12 g-5" src="../img/download.jpeg" alt="foto desde campanario" />
+            <img class="img__barra col-md-12 g-5" src="../img/panoramicampanario2.jpg" alt="foto desde campanario" />
         </div>
 
         <div class="row">
@@ -92,20 +92,29 @@
                 <h2>El Trebol</h2>
 
                 <ul class="lista text-center">
-                    <li class="h5"><a class="lista" href="proximamente">Pared Blanca</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">Carmelitas</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">La Oficina</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">Casa de Dani</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#paredblanca"
+                            href="#paredblanca">Pared Blanca</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#carmelitas"
+                            href="#carmelitas">Carmelitas</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#laoficina"
+                            href="#laoficina">La oficina</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#laoficina"
+                            href="#laoficina">Casa de Dani</a></li>
+
                 </ul>
             </section>
 
             <section class="col-md-6  col-lg-4 g-5 centrar ">
                 <h2>Ventana</h2>
                 <ul class="lista text-center">
-                    <li class="h5"><a class="lista" href="proximamente">Frente</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">Tehuelche</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">Placa Uija</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">Pochoclo</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#tehuelche" href="#tehuelche">Frente</a>
+                    </li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#tehuelche" href="#tehuelche">Tehuelche</a>
+                    </li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#uija" href="#uija">Placa Uija</a>
+                    </li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#pochoclo" href="#pochoclo">Pochoclo</a>
+                    </li>
                 </ul>
 
 
@@ -114,10 +123,14 @@
             <section class="col-md-6  col-lg-4 g-5 centrar">
                 <h2>Cerro Lopez</h2>
                 <ul class="lista text-center">
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#diedro" href="#diedro">Diedro Blanco</a>
+                    </li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#escondido" href="#escondido">Escondido</a>
+                    </li>
                     <li class="h5"><a class="lista" href="proximamente">Canuto</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">Diedro Blanco</a></li>
                     <li class="h5"><a class="lista" href="proximamente">Pirca Canuta</a></li>
-                    <li class="h5"><a class="lista" href="proximamente">La Coctelera</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#coctelera" href="#coctelera">Coctelera</a>
+                    </li>
                     <li class="h5"><a class="lista" href="proximamente">Morenhuapi</a></li>
                 </ul>
             </section>
@@ -125,13 +138,15 @@
             <section class="col-md-6  col-lg-4 g-5 centrar">
                 <h2>Cerro San Martin</h2>
                 <ul class="lista text-center">
-                    <li class="h5"><a class="lista" href="proximamente">Genesis</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#genesis" href="#genesis">Genesis</a>
+                    </li>
                     <li class="h5"><a class="lista" href="proximamente">Exodo</a></li>
                 </ul>
             </section>
 
             <section class="col-md-6 col-lg-4 g-5 centrar">
-                <h2>Calabozo</h2>
+                <h2 class="lista"><a class="lista" data-bs-toggle="modal" data-bs-target="#calabozo" href="#calabozo">Calabozo</a>
+                </h2>
 
             </section>
 
@@ -139,8 +154,10 @@
 
                 <h2>Villa Llanquin</h2>
                 <ul class="lista text-center">
-                    <li class="h5"><a class="lista" href="proximamente"></a>Piedras Rojas</li>
-                    <li class="h5"><a class="lista" href="proximamente"></a>La Cosa</li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#llanquin"
+                            href="#llanquin">Piedras Rojas</a></li>
+                    <li class="h5"><a class="lista" data-bs-toggle="modal" data-bs-target="#llanquin"
+                            href="#llanquin">La cosa</a></li>
                 </ul>
 
             </section>
@@ -148,6 +165,578 @@
 
         </div>
 
+        <!-- MODALES -->
+
+        <!-- Escondido -->
+
+        <div id="coctelera" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">La Coctelera</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselcoctelera" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselcoctelera" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselcoctelera" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselcoctelera" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/coctelera.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselcoctelera"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselcoctelera"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Escondido -->
+
+        <div id="escondido" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Escondido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselescondido" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselescondido" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselescondido" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselescondido" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/Escondido.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselescondido"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselescondido"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Diedro Blanco -->
+
+        <div id="diedro" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Diedro Blanco</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouseldiedro" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouseldiedro" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouseldiedro" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouseldiedro" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/diedroblanco.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouseldiedro"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouseldiedro"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Calabozo -->
+
+        <div id="calabozo" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Calabozo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselcalabozo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselcalabozo" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselcalabozo" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselcalabozo" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/calabozo.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselcalabozo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselcalabozo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Genesis -->
+
+        <div id="genesis" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Genesis</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselgenesis" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselgenesis" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselgenesis" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselgenesis" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/Genesis1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/genesis2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/genesis3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/genesis4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselgenesis"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselgenesis"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Pared Blanca -->
+
+        <div id="paredblanca" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pared Blanca</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselParedBlanca" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselParedBlanca" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselParedBlanca" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselParedBlanca" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/Paredblanca1.chrome.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/paredblanca2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/paredblanca3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselParedBlanca"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselParedBlanca"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Carmelitas -->
+
+        <div id="carmelitas" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Carmelitas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselCarmelitas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCarmelitas" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselCarmelitas" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselCarmelitas" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/Paredblanca1.chrome.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/paredblanca2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/paredblanca3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarmelitas"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCarmelitas"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- La Oficina -->
+
+
+        <div id="laoficina" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">La oficina</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselLaoficina" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselLaoficina" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselLaoficina" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselLaoficina" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/Paredblanca1.chrome.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/paredblanca2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/paredblanca3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaoficina"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselLaoficina"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Villa Llanquin -->
+
+
+        <div id="llanquin" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Llanquin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselllanquin" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#caruselllanquin" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselllanquin" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselllanquin" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/llanquipiedrasrojas1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/llanquinpiedrasrojas3.jpg" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/llanquinpiedrasrojas3.jpg" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselllanquin"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselllanquin"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pochoclo -->
+
+
+        <div id="pochoclo" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pochoclo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselpochoclo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselpochoclo" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselpochoclo" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselpochoclo" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/pochoclo1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/pochoclo2.jpg" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselpochoclo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselpochoclo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tehuelche -->
+
+
+        <div id="tehuelche" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Tehuelche</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouseltehuelche" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouseltehuelche" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouseltehuelche " data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouseltehuelche" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/tehuelche1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/tehuelche2.jpg" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/img_guia/tehuelche3.jpg" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouseltehuelche"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouseltehuelche"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+         <!-- Pochoclo -->
+
+
+         <div id="uija" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mw-100 w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Placa Uija</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouseluija" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouseluija" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouseluija" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouseluija" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/img_guia/placauija.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouseluija"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouseluija"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Escala de Graduacion -->
 
 
         <div class="g-5 centrar">
@@ -309,20 +898,22 @@
 
     </main>
 
-    <footer>
-        <h3 class="titulo h3">Seguinos en redes sociales</h3>
-        <p>La página actual es un solo un ejercicio para mi carrera de Desarrollo Web, no intenta representar a la
-            asociación real (y estará online en forma temporal solo como parte de una entrega), es una pagina estática con
+    <footer class="footer">
+        <h3 class="titulo h3 footer_div1">Seguinos en redes sociales</h3>
+        <p class="footer_div2">La página actual es un solo un ejercicio para mi carrera de Desarrollo Web, no intenta
+            representar a la
+            asociación real (y estará online en forma temporal solo como parte de una entrega), es una pagina estática
+            con
             contenido de relleno inventado para simular una posible pagina real. </p>
-        <div class="logos__footer">
+        <div class="logos__footer footer_div3">
             <a class="logos__footer btn-email" href="mailto:peluyocas@hotmail.com"><img
                     src="../Iconos/icons8-mail-48.png" alt="" /> E-mail</a>
             <a class="logos__footer btn-facebook"
                 href="https://www.facebook.com/Asociaci%C3%B3n-Escalada-Bariloche-100554405451780"><img
-                    src="../Iconos/icons8-facebook-48.png" alt="" /> Facebook</a>
+                    src="../Iconos/icons8-facebook-48.png" alt="" /> Facebook</a> <br>
             <a class="logos__footer btn-instagram" href="https://www.instagram.com/aebar_patagonia/"><img
                     src="../Iconos/icons8-instagram-48.png" alt="" />Instagram</a>
-            <a href="" class="logos__footer btn-twitter"><img src="../Iconos/icons8-twitter-48.png" alt=""> Twitter</a>
+            <a href="" class="logos__footer btn-twitter"><img src="./Iconos/icons8-twitter-48.png" alt=""> Twitter</a>
             <p>Proximamente EscaladaBar App</p>
         </div>
     </footer>
