@@ -45,6 +45,79 @@
       }
   }
 
+  .parallax-index{
+    background: #000;
+    background: linear-gradient(
+      rgba(0,0,0, 0.3),
+      rgba( 0,0,0,0.8)
+    ),
+    url(../img/ofilucas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  .parallax-comisiones{
+    background: #000;
+    background: linear-gradient(
+      rgba(0,0,0, 0.3),
+      rgba( 0,0,0,0.8)
+    ),
+    url(../img/morenito.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  .parallax-guia{
+    background: #000;
+    background: linear-gradient(
+      rgba(0,0,0, 0.3),
+      rgba( 0,0,0,0.8)
+    ),
+    url(../img/torrecitas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  .parallax-muros{
+    background: #000;
+    background: linear-gradient(
+      rgba(0,0,0, 0.3),
+      rgba( 0,0,0,0.8)
+    ),
+    url(../img/calabozo3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  .parallax-contacto{
+    background: 
+    url(../img/paisaje.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  
+
+  
+
+
+
+
   @font-face {
     font-family: "openSansBold";
     src: url(../fonts/open-sans/OpenSans-Bold.ttf);

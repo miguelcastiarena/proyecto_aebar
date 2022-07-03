@@ -4,19 +4,19 @@
   
   .section__contacto {
     background-color: #ffffff;
-    width: 50%;
+    
     // box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
   }
   
-  .titulo_contacto {
-      width: 40%;
-      margin-left: 5%;
-  }
+  
   .form__coontacto {
     padding: 8rem;
     overflow: hidden;
     color: $color-texto;
-    
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   
   .form__contacto label,
