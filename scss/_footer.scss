@@ -1,7 +1,9 @@
 footer {
-    background-image: linear-gradient(to right, $color-principal, white);
+    background-color: $color-secundario;
     display: flex;
     justify-content: space-between;
+    border-top: $color-texto;
+    
     h3, p {
         display: flex;
         justify-content: space-between;

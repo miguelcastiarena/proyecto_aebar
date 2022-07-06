@@ -1,7 +1,8 @@
 footer {
-  background-image: linear-gradient(to right, #8dc5c3, white);
+  background-color: #90d6e0;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-top: #555b6e; }
   footer h3, footer p {
     display: flex;
     justify-content: space-between;
@@ -89,28 +90,33 @@ footer {
 
 /* Estilos generales */
 body {
-  background-color: #faf9f9; }
+  background-color: #555b6e;
+  opacity: 0.9; }
 
 * {
   margin: 0px;
   padding: 0px;
   font-family: "openSans";
-  color: #555b6e; }
+  color: #555b6e;
+  text-align: justify; }
 
 /* HEADER*/
+.headTitulo {
+  color: #edeaea; }
+
+header {
+  border-bottom: #000; }
+
 ul {
   list-style-type: none; }
   ul li a {
     text-decoration: none;
-    transition: all 1.5s; }
-    ul li a:visited {
-      color: #25737d; }
-    ul li a:hover {
-      background-color: #8dc5c3;
-      padding-left: 12px;
-      padding-right: 12px;
-      transform: scale(1.1);
-      transition: all 1s; }
+    text-align: center; }
+  ul li:hover {
+    background-color: #edeaea;
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: all 1s; }
 
 .parallax-index {
   background: #000;
@@ -183,8 +189,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  border-top: #555b6e; }
+  margin: 5px; }
 
 .formNav input,
 .formNav label {
@@ -206,7 +211,8 @@ header {
   .lista .lista li a {
     list-style-type: none;
     text-decoration: none;
-    color: #555b6e; }
+    color: #555b6e;
+    text-align: center; }
 
 main {
   background-color: #edeaea; }
@@ -248,57 +254,7 @@ main {
 .mainGuia {
   padding: 3%;
   background-color: #edeaea;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "divGuia1" "divGuia2" "divGuia3"; }
-
-.divGuia1 {
-  grid-area: divGuia1;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.divGuia2 {
-  grid-area: divGuia2;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.divGuia2 ul {
-  text-align: center;
-  text-decoration: none;
-  list-style: none; }
-
-.divGuia3 {
-  grid-area: divGuia3;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.divGuia4 {
-  grid-area: divGuia4;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.divGuia5 {
-  grid-area: divGuia5;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.divGuia6 {
-  grid-area: divGuia6;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.divGuia7 {
-  grid-area: divGuia7;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  display: grid; }
 
 caption {
   padding: 20px;
@@ -318,6 +274,13 @@ tfoot,
 td {
   border: solid;
   text-align: center; }
+
+.tbody {
+  display: inline-block;
+  overflow: scroll;
+  height: 400px;
+  width: auto;
+  border-collapse: collapse; }
 
 /* SECCION MUROS */
 .mainMuros {

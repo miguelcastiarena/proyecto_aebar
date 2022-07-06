@@ -11,17 +11,29 @@
 
 
   body {
-    background-color: #faf9f9;
+    
+    background-color: $color-texto;
+    opacity: 0.9;
+    
   }
 
   * {
     margin: 0px;
     padding: 0px;
     font-family: "openSans";
-    color: #555b6e;
+    color: $color-texto;
+    text-align: justify;
   }
   
       /* HEADER*/
+
+  .headTitulo{
+    color: $color-fondo-secundario;
+  }
+
+  header{
+    border-bottom: #000;
+  }
 
   
   ul{
@@ -29,21 +41,20 @@
       li{
           a{
               text-decoration: none;
-              transition: all 1.5s;
-    &:visited {
-    color: rgb(37, 115, 125);
+              text-align: center;
+              
+    
 }
     &:hover {
-    background-color: $color-principal;
-    padding-left: 12px;
-    padding-right: 12px;
+    background-color: $color-fondo-secundario;
+    border-radius: 5px;
     transform: scale(1.1);
     transition: all 1s;
   
   }
           }
       }
-  }
+  
 
   .parallax-index{
     background: #000;
@@ -157,7 +168,7 @@
     justify-content: center;
     align-items: center;
     margin: 5px;
-    border-top: $color-texto;
+    
   }
   
   .formNav input,
@@ -173,6 +184,7 @@
     font-size: large;
     font-family: "openSansBold";
     padding: 2%;
+    
   }
 }
   
@@ -184,6 +196,7 @@
         list-style-type: none;
         text-decoration: none;
         color: $color-texto;
+        text-align: center;
       }
   }
 
@@ -242,68 +255,8 @@
     padding: 3%;
     background-color: $color-fondo-secundario;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "divGuia1"
-      "divGuia2"
-      "divGuia3";
   }
   
-  .divGuia1 {
-    grid-area: divGuia1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .divGuia2 {
-    grid-area: divGuia2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .divGuia2 ul {
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  .divGuia3 {
-    grid-area: divGuia3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .divGuia4 {
-    grid-area: divGuia4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .divGuia5 {
-    grid-area: divGuia5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .divGuia6 {
-    grid-area: divGuia6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .divGuia7 {
-    grid-area: divGuia7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   
   caption {
     padding: 20px;
@@ -325,6 +278,15 @@
   td {
     border: solid;
     text-align: center;
+  }
+
+  .tbody{
+    display: inline-block;
+    overflow: scroll;
+    height: 400px;
+    width: auto;
+    border-collapse: collapse
+   
   }
   
   /* SECCION MUROS */
