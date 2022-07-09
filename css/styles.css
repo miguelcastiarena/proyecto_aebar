@@ -91,7 +91,8 @@ footer {
 /* Estilos generales */
 body {
   background-color: #555b6e;
-  opacity: 0.9; }
+  background-image: url(../img/calabozocarcatura3.jpg);
+  opacity: 0.97; }
 
 * {
   margin: 0px;
